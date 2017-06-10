@@ -1,0 +1,24 @@
+{
+  "name": "nodemongo",
+  "version": "1.0.0",
+  "description": "proyecto prueba conexion node con mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonblancor/nodemongodb.git"
+  },
+  "author": "Jhonblancor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonblancor/nodemongodb/issues"
+  },
+  "homepage": "https://github.com/jhonblancor/nodemongodb#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.10.5"
+  }
+}
