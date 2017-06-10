@@ -7,4 +7,14 @@ if(error){
 }
 });
 
+const express = require('express');
+const app = express();
 
+app.listen(3000, function(){
+console.log('conectado al peurto 3000');
+});
+
+app.get('', (req, res) => {
+app.get('/', function(req, res){
+res.send('Waoo Estoy conectado a Mongodb');
+})
