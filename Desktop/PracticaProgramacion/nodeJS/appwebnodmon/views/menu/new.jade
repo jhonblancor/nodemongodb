@@ -1,16 +1,22 @@
-doctype html
-html(lang="en")
-	head
-		title Node Web
-		meta(charset="utf-8")
-		link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min/css" rel="stylesheet")
-		link(href="css/main.css" rel="stylesheet")
-
-		link(href="http://fonts.googleapies.com/css?family=Pacifico" rel="stylesheet" type="text/css")
-
-		link(href="http://fonts.googleapies.com/css?family=Lato:300,400" rel="stylesheet" type="text/css")
-		
-		link(href="css/animate.css" rel="stylesheet" type="text/css")
-	body
-		div(class="col-md-5 center-block no-float top-space text-left")
-			h1 Agregar Producto
+extends ../layout.jade
+block contenido
+	div(class="col-md-5 center-block no-float top-space text-left")
+		h1 Agregar Producto
+		form(method="post" action="/menu" style="margin-top:1.5em;" enctype="multipart/form-data")
+			div(class="form-group")
+				label Nombre
+				input(type="text" name="title" placeholder="Nombre del producto" class="form-control")
+			div(class="form-group")
+				label Description
+				textarea(name="description" placeholder="Description producto" class="form-control")
+			div(class="form-group")
+				label Costo
+				input(name="pricing" placeholder="Costo del producto" class="form-control")
+			div(class="form-group")
+				label Imagen del producto
+				input(type="file" name="avatar_producto")
+			div(class="form-group")
+				label Contraseña
+				input(type="password" name="password" placeholder="contraseña" class="form-control")
+			div(class="form-group text-right")
+				input(type="submit" class="btn btn-info" values="Guardar")

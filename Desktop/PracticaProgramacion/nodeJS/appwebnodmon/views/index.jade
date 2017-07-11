@@ -1,27 +1,15 @@
-doctype html
-html(lang="en")
-	head
-		title Node Web
-		meta(charset="utf-8")
-		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-		link(href="/css/main.css" rel="stylesheet")
-
-		link(href="http://fonts.googleapies.com/css?family=Pacifico" rel="stylesheet" type="text/css")
-
-		link(href="http://fonts.googleapies.com/css?family=Lato:300,400" rel="stylesheet" type="text/css")
-		
-		link(href="css/animate.css" rel="stylesheet" type="text/css")
-	body
-		section(class="full-height text-center" id="main-content")
+extends ./layout.jade
+block contenido
+	section(class="full-height text-center" id="main-content")
 			div(class="data")
 				div(class="col-md-3 center-block no-float top-space")
 					img(src="imgs/icecream.png" class="animated fadeIn")
-					h1(class="pacifico big green animated fadeIn delay-1") food facilito
+					h1(class="pacifico big green animated fadeIn delay-1") QuickEat
 					div(class="animated fadeInDown delay-2") 
-						h2 ven, convive y diviértete
+						h2 La forma facil y rapida de pedir su comida
 						nav 
 							a(href="menu.html" class="right-space") Menú
 							a(href="menu.html" class="right-space") Contacto
 							a(href="menu.html" class="right-space") Acerca de 
-		script(src="https://code.jquery.com/jquery-2.1.1.js")
+		script(src="https://code.jquery.com/jquery-2.1.1.min.js")
 		script(src="js/main.js")
